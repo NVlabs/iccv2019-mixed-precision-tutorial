@@ -1,1 +1,259 @@
-Accelerating Computer Vision with Mixed Precision
+<html>
+
+<head>
+    <style type="text/css">
+        a {
+            color: #1772d1;
+            text-decoration: none;
+        }
+
+        a:focus,
+        a:hover {
+            color: #f09227;
+            text-decoration: none;
+        }
+
+        body,
+        td,
+        th {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #000000;
+        }
+
+        tr {
+            padding: 20px;
+            text-align: center;
+        }
+
+        strong {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 14px
+        }
+
+        heading {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .section {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 1em 1em 1em 1em;
+            background: #F5F5F5;
+        }
+
+        .section_header {
+            font-size: 24px;
+            font-weight: 700;
+            color: #76b900;
+        }
+
+        .table_header {
+            background-color: #76b900;
+            color: white;
+        }
+
+        hr {
+            border: 1px solid black;
+            margin: 0.2%;
+        }
+
+        .lightgreen {
+            background-color: #e6f3d1;
+        }
+
+        .mildgreen {
+            background-color: #75b90077;
+        }
+
+        table {
+            margin-top: 2%;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table td {
+            border: 1px solid black;
+            padding: 1%;
+            font-size: 16px;
+        }
+
+        table tr:first-child td {
+            border-top: 0;
+        }
+
+        table tr td:first-child {
+            border-left: 0;
+        }
+
+        table tr:last-child td {
+            border-bottom: 0;
+        }
+
+        table tr td:last-child {
+            border-right: 0;
+        }
+
+        mark {
+            background-color: rgba(21, 255, 0, 0.61);
+            color: black;
+        }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <title>AMP</title>
+</head>
+
+<body>
+    <p align="center" style="padding-top: 3%">
+        <font size="5">ICCV 2019 Tutorial on</font></br>
+        <font size="6">Accelerating Computer Vision with Mixed Precision</font></br></br>
+
+        <b>Time and Location:</b></br>
+        Saturday, Nov 2, Half Day AM
+        </br></br>
+    </p>
+
+
+    <div class="section">
+        <div class="section_header">Overview</div>
+        <p style="text-align: left;">
+            New levels of accuracy in computer vision, from image recognition and detection, to generating images with
+            GANs, have been achieved by increasing the size of trained models. Fast turn-around times while iterating on
+            the design of such models would greatly improve the rate of progress in this new era of computer vision.
+            </br>
+        </p>
+
+        <p style="text-align: center; background-color: rgba(21, 255, 0, 0.61);">
+            This tutorial will describe techniques that utilize half-precision floating point representations to
+            allow deep learning practitioners to accelerate the training of large deep networks while also reducing
+            memory requirements.</br>
+        </p>
+
+        <p style="text-align: left;">
+            The talks and sessions below will provide a deep-dive into available software packages that enable easy
+            conversion of
+            models to mixed precision training, practical application examples and tricks of the trade (mixed precision
+            arithmetic, loss scaling, etc.), as well as considerations relevant to training many popular models in
+            commonly used deep learning frameworks including <a href="https://pytorch.org/" target="_blank">PyTorch</a>
+            and <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a>.
+        </p>
+
+
+    </div>
+    </br>
+
+
+    <div class="section">
+        <div class="section_header">Schedule</div>
+        <table align="center">
+            <tbody>
+                <tr class="table_header">
+                    <td><b>Time</b></td>
+                    <td><b>Title</b></td>
+                    <td><b>Speaker</b></td>
+                    <td><b>Affiliation</b></td>
+                </tr>
+                <tr>
+                    <td>08:45 - 08:50</td>
+                    <td>Welcome</td>
+                    <td><a href="https://arunmallya.github.io/" target="_blank">Arun Mallya</a></td>
+                    <td>NVIDIA</td>
+                </tr>
+                <tr>
+                    <td>08:50 - 09:30</td>
+                    <td>Introduction to Mixed Precision Training with PyTorch and Tensorflow</td>
+                    <td>Paulius M.</td>
+                    <td>NVIDIA</td>
+                </tr>
+                <tr>
+                    <td>09:30 - 10:00</td>
+                    <td>Mixed Precision Training and Inference at Scale at Alibaba</td>
+                    <td>Jun Yang</td>
+                    <td>Alibaba</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class='mildgreen'>
+                    <td colspan=100%>
+                        <b>Accelerating Various Tasks with Mixed Precision</b>
+                    </td>
+                </tr>
+                <tr class="lightgreen">
+                    <td>11:00 - 11:20</td>
+                    <td>Hand and Body Pose Estimation</td>
+                    <td>Pavlo Molchanov</td>
+                    <td>NVIDIA</td>
+                </tr>
+                <tr>
+                    <td>11:20 - 11:35</td>
+                    <td>Semantic Segmentation</td>
+                    <td>Karan Sapra</td>
+                    <td>NVIDIA</td>
+                </tr>
+                <tr class="lightgreen">
+                    <td>11:35 - 11:50</td>
+                    <td>Image Processing</td>
+                    <td><a href="https://liuguilin1225.github.io/" target="_blank">Guilin Liu</a></td>
+                    <td>NVIDIA</td>
+                </tr>
+                <tr>
+                    <td>11:50 - 12:10</td>
+                    <td>Image Synthesis</td>
+                    <td><a href="https://tcwang0509.github.io/" target="_blank">Ting-Chun Wang</a></td>
+                    <td>NVIDIA</td>
+                </tr>
+                <tr class="lightgreen">
+                    <td>12:10 - 12:30</td>
+                    <td>Generative Adversarial Networks (GANs)</td>
+                    <td><a href="http://mingyuliu.net/" target="_blank">Ming-Yu Liu</a></td>
+                    <td>NVIDIA</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </br>
+
+    <div class="section">
+        <div class="section_header">Useful Links</div>
+        </br>
+        <div style="text-align: left;">
+            <b>NVIDIA Tensor Cores for Mixed Precision:</b>
+            <a target="_blank" href="https://developer.nvidia.com/tensor-cores">Discover, Learn, Test, and Implement</a>
+            </br> </br>
+
+            <b>High-Performance Sample Code for Various Applications:</b>
+            <a target="_blank" href="https://github.com/NVIDIA/DeepLearningExamples">PyTorch and TensorFlow</a>
+            </br> </br>
+
+            <b>NVIDIA Automatic Mixed Precision (AMP):</b>
+            <a target="_blank" href="https://github.com/NVIDIA/apex/tree/master/examples/imagenet">Training ImageNet in
+                PyTorch</a> /
+            <a target="_blank" href="https://developer.nvidia.com/automatic-mixed-precision">Introduction</a> /
+            <a target="_blank" href="https://nvidia.github.io/apex/amp.html">Documentation</a> /
+            <a target="_blank" href="https://github.com/NVIDIA/apex/tree/master/apex/amp">Github</a>
+            </br> </br>
+
+            <b>NVIDIA Data Loading Library (DALI) for faster data loading:</b>
+            <a target="_blank" href="https://developer.nvidia.com/DALI">Introduction</a> /
+            <a target="_blank"
+                href="https://docs.nvidia.com/deeplearning/sdk/dali-developer-guide/docs/index.html">Documentation</a> /
+            <a target="_blank" href="https://github.com/NVIDIA/DALI">Github</a>
+            <!-- <ol style="margin-top: 0;">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol> -->
+        </div>
+    </div>
+    </br></br></br></br></br></br></br></br>
+</body>
+
+</html>
