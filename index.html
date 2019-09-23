@@ -102,11 +102,22 @@
             background-color: rgba(21, 255, 0, 0.61);
             color: black;
         }
+
+        .pic {
+            border-radius: 50%;
+            width: 100%;
+        }
+
+        .noborder,
+        .noborder tr,
+        .noborder th,
+        .noborder td {
+            border: none;
+        }
     </style>
-    <link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'
-        type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <title>AMP Tutorial</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="imgs/favicon.ico">
 </head>
 
 <body>
@@ -115,7 +126,8 @@
         <font size="6">Accelerating Computer Vision with Mixed Precision</font></br></br>
 
         <b>Time and Location:</b></br>
-        Saturday, Nov 2, Half Day AM
+        Saturday, Nov 2, Half Day AM</br>
+        Room E5
         </br></br>
     </p>
 
@@ -168,7 +180,7 @@
                 <tr>
                     <td>08:50 - 09:30</td>
                     <td>Introduction to Mixed Precision Training with PyTorch and Tensorflow</td>
-                    <td>Paulius Micikevicius</td>
+                    <td>Dusan Stosic</td>
                     <td>NVIDIA</td>
                 </tr>
                 <tr>
@@ -229,6 +241,9 @@
         <div style="text-align: left;">
             <b>NVIDIA Tensor Cores for Mixed Precision:</b>
             <a target="_blank" href="https://developer.nvidia.com/tensor-cores">Discover, Learn, Test, and Implement</a>
+            /
+            <a target="_blank" href="https://devblogs.nvidia.com/optimizing-gpu-performance-tensor-cores/">Optimizing
+                for Tensor Cores</a>
             </br> </br>
 
             <b>High-Performance Sample Code for Various Applications:</b>
@@ -250,6 +265,137 @@
             <a target="_blank" href="https://github.com/NVIDIA/DALI">Github</a>
         </div>
     </div>
+    </br>
+
+    <div class="section">
+        <div class="section_header">Organizers</div>
+        </br>
+        <table align="center" class="noborder">
+            <tbody>
+
+
+                <tr>
+                    <td style="width: 15%;"><img class="pic" src="imgs/ArunMallya.jpg" alt="Arun Mallya"> </td>
+                    <td style="text-align: left;">
+                        <a href="https://arunmallya.github.io/" target="_blank"><b>Arun Mallya</b></a> is a Research
+                        Scientist at NVIDIA Research. He obtained his Ph.D. from the University of
+                        Illinois at Urbana-Champaign in 2018, with a focus on performing multiple tasks efficiently with
+                        a single deep network. He holds a B.Tech. in Computer Science and Engineering from the Indian
+                        Institute of Technology - Kharagpur (2012), an MS in Computer Science from the University of
+                        Illinois at Urbana-Champaign (2014). His current interests are on making neural networks faster,
+                        better, and more compact.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 15%;"><img class="pic" src="imgs/PauliusM.jpeg" alt="Paulius Micikevicius"></td>
+                    <td style="text-align: left;">
+                        <b>Paulius Micikevicius</b> works in compute architecture at NVIDIA on accelerating DNN training
+                        and
+                        inference through reduced arithmetic and other optimization techniques. In his previous roles at
+                        NVIDIA Paulius focused on parallelizing various compute workloads for GPUs, including DL,
+                        computer vision, scientific, and engineering applications. He also worked worked on developer
+                        education, connecting chip architecture details to software optimization techniques, resulting
+                        some of the highest rated and attended GPU Technology Conference talks. Paulius has also worked
+                        on perception while at a self-driving car company Zoox and as an assistant professor of Computer
+                        Science at Armstrong Atlantic State University. He holds a PhD in Computer Science from the
+                        University of Central Florida.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 15%;"><img class="pic" src="imgs/CarlCase.jpg" alt="Carl Case"></td>
+                    <td style="text-align: left;">
+                        <b>Carl Case</b> is a senior architect in compute architecture at NVIDIA, where he works on
+                        reduced-precision arithmetic for training deep neural networks. His focus is optimizing the
+                        entire stack of deep learning training - from hardware to high-level software - to accelerate
+                        the pace of AI development. Previously, he worked as a machine learning researcher on Deep
+                        Speech and its successor speech recognition systems at Baidu's Silicon Valley AI Lab. He holds
+                        bachelor's and master's degrees in computer science from Stanford University.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 15%;"><img class="pic" src="imgs/PavloMolchanov.jpg" alt="Pavlo Molchanov"> </td>
+                    <td style="text-align: left;">
+                        Pavlo Molchanov obtained PhD from Tampere University of Technology, Finland in the area of
+                        signal processing in 2014. His dissertation was focused on designing automatic target
+                        recognition systems for radars. Since 2015 he is with the Learning and Perception Research team
+                        at NVIDIA, currently holding a senior research scientist position. His research is focused on
+                        methods for neural network acceleration, and designing novel systems for human-computer
+                        interaction and human understanding. For network acceleration, he is interested in neural
+                        network pruning methods and conditional inference. For human understanding, he is working on
+                        landmark estimation, gesture recognition, hand pose estimation. He received the EuRAD best paper
+                        award in 2011 and EuRAD young engineer award in 2013.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 15%;"><img class="pic" src="imgs/KaranSapra.jpg" alt="Karan Sapra"></td>
+                    <td style="text-align: left;">
+                        <a href="https://karansapra.github.io/" target="_blank"><b>Karan Sapra</b></a>
+                        is a research scientist at NVIDIA in Santa Clara, US. He obtained his PhD.
+                        from Clemson University in 2018. During his PhD studies, he was an intern at Oak Ridge National
+                        Lab in 2015. His research interest lies in using deep learning for computer vision and computer
+                        graphics. During his PhD. he has also worked on various other research areas such as Peer2peer
+                        (P2P) networks, computer networking and security, and high performance computing (HPC)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 15%;"><img class="pic" src="imgs/GuilinLiu.jpg" alt="Guilin Liu"></td>
+                    <td style="text-align: left;">
+                        <a href="https://liuguilin1225.github.io/" target="_blank"><b>Guilin Liu</b></a> is a senior
+                        research
+                        scientist at NVIDIA in Santa Clara, US. He obtained
+                        his Ph.D. from George Mason University in 2017. During his P.h.D study, he as an intern at Adobe
+                        Research in 2016. He received his B.E. from Wuhan University in 2012. His research interest lies
+                        in the intersection among deep learning, computer vision and graphics. His recent research
+                        interest focus on using deep learning for image processing and estimating physical properties
+                        from images. His works have been published at ICCV, CVPR, ECCV, NeurIPS, IROS etc and featured
+                        in some mainstream media outlets including Fortune, Yahoo Finance, VentureBeat etc.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 15%;"><img class="pic" src="imgs/TingChunWang.jpg" alt="Ting-Chun Wang"></td>
+                    <td style="text-align: left;">
+                        <a href="https://tcwang0509.github.io/" target="_blank"><b>Ting-Chun Wang</b></a> is a research
+                        scientist at NVIDIA in Santa Clara, US. He obtained his Ph.D.
+                        from
+                        University of California, Berkeley, department of EECS, advised by Professor Ravi Ramamoorthi
+                        and Alexei A. Efros. He received his B.E from National Taiwan University. He is a recipient of
+                        the Berkeley Fellowship. His research interests include computer vision, machine learning and
+                        computer graphics, particularly the intersections of all three. His recent research focus is on
+                        using generative adversarial models to synthesize realistic images and videos, with applications
+                        to rendering, visual manipulations and beyond.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 15%;"><img class="pic" src="imgs/MingYuLiu.jpg" alt="Ming-Yu Liu"> </td>
+                    <td style="text-align: left;">
+                        <a href="http://mingyuliu.net/" target="_blank"><b>Ming-Yu Liu</b></a> is a principal research
+                        scientist at NVIDIA Research. Before joining NVIDIA in
+                        2016,
+                        he
+                        was a principal research scientist at Mitsubishi Electric Research Labs (MERL). He earned his
+                        Ph.D.
+                        from the Department of Electrical and Computer Engineering at the University of Maryland College
+                        Park in 2012. He is a recipient of the R&D 100 Award by R&D Magazine for his robotic bin picking
+                        system in 2014. His semantic image synthesis paper and scene understanding paper are in the best
+                        paper finalist in the 2019 CVPR and 2015 RSS conferences, respectively. In SIGGRAPH 2019, he won
+                        the
+                        Best in Show Award and Audience Choice Award in the Real Time Live show for his image synthesis
+                        work. His research focus is on generative image modeling. His research goal is to enable
+                        machines
+                        human-like imagination capability.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
     </br></br></br></br></br></br></br></br>
 </body>
 
